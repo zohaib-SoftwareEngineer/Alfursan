@@ -1,0 +1,52 @@
+.outer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 35;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .outer {
+    bottom: 3rem;
+  }
+}
+
+.inner {
+  pointer-events: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 1280px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: var(--brand-600);
+  padding: 0.75rem 1.5rem;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  flex: 1;
+  text-align: center;
+}
+
+.close {
+  flex-shrink: 0;
+  padding: 0;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  opacity: 0.95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close:hover {
+  opacity: 1;
+}

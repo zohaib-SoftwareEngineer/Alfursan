@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Altone';
+  src: url('/assets/fonts/altone/Altone-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('/assets/fonts/altone/Altone-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('/assets/fonts/altone/Altone-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altone';
+  src: url('/assets/fonts/altone/Altone-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/poppins/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand-accent: rgba(0, 153, 153, 1);
+  --brand-800-90: rgba(0, 50, 48, 0.9);
+  --brand-800: rgba(0, 50, 48, 1);
+  --brand-700: rgba(0, 64, 61, 1);
+  --brand-600: rgba(2, 83, 79, 1);
+  --brand-650: rgba(9, 111, 106, 1);
+  --brand-500: rgba(51, 91, 89, 1);
+  --brand-400: rgba(85, 141, 138, 1);
+  --brand-300: rgba(145, 189, 186, 1);
+  --base-white-white: rgba(255, 255, 255, 1);
+  --base-white-200: rgba(225, 225, 225, 1);
+  --base-transparent-white-20: rgba(255, 255, 255, 0.2);
+  --base-transparent-20-default: rgba(255, 255, 255, 0.04);
+  --base-transparent-blur-30: rgba(0, 50, 48, 0.65);
+  --status-available: #5a9e6f;
+  --status-sold: #c0392b;
+  --status-reserved: #e67e22;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Altone', 'Poppins', system-ui, sans-serif;
+  background-color: var(--brand-800);
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #ffffff33;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
