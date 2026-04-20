@@ -1,0 +1,193 @@
+/**
+ * Apartment list navbar — copied from the live `Zone_All` build (preserved
+ * generated class names so the existing CSS selectors keep matching).
+ *
+ * Single addition: `.iPVVek { top/left/right }` so `position: fixed` anchors
+ * to the viewport.
+ */
+
+:root {
+  --base-transparent-blur-30: rgba(120, 120, 120, 0.3);
+  --base-transparent-white-20: rgba(255, 255, 255, 0.2);
+  --base-white-white: rgba(255, 255, 255, 1);
+  --brand-700: rgba(0, 64, 61, 1);
+  --brand-650: rgba(9, 111, 106, 1);
+  --brand-600: rgba(2, 83, 79, 1);
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+  border: 0 solid transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus,
+[type="button"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button:focus-visible,
+[type="button"]:focus-visible {
+  outline: 1px dashed rgba(255, 255, 255, 0.45);
+  outline-offset: 2px;
+}
+
+.iPVVek {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 51;
+  display: flex;
+  min-height: 64px;
+  width: 100%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--brand-700);
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .iPVVek {
+    flex-direction: column;
+    background-color: transparent;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1.25rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .iPVVek::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 104px;
+    height: 100%;
+    background-image: url(/icons/header_pattern.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+.feiOvI {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 88px;
+  width: 100%;
+  max-width: min(1120px, 100%);
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  background-color: rgba(120, 120, 120, 0.22);
+  padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+  box-shadow: none;
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+.feiOvI:is([dir="rtl"] .ApartmentListNav___StyledDiv2-sc-se1kik-2) {
+  padding-left: 0.75rem;
+  padding-right: 1.5rem;
+}
+
+.iiVOLD {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gstSei {
+  margin-left: 0.5rem;
+  border: 0 solid transparent;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--base-transparent-white-20);
+  padding-left: 0.5rem;
+}
+
+[dir="rtl"] .gstSei {
+  margin-left: 0;
+  margin-right: 0.5rem;
+  border-left: 0 solid transparent;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--base-transparent-white-20);
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
+.biwPMc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--base-white-white);
+}
+
+.nav-lang {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  opacity: 0.95;
+  padding: 0.2rem 0.35rem;
+}
+
+.iBZuJe,
+.NTDmM,
+.jGLKEq,
+.hWvHRE {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.jLMNzk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.gXAfBx {
+  background-color: var(--brand-650);
+  color: var(--base-white-white);
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-transform: capitalize;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 9999px;
+  padding: 10px 1.5rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.gXAfBx:hover {
+  background-color: var(--brand-600);
+  color: var(--base-white-white);
+}
